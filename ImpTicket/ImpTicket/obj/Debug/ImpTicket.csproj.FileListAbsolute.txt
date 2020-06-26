@@ -1,0 +1,11 @@
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\bin\Debug\ImpTicket.exe
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\bin\Debug\ImpTicket.pdb
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\bin\Debug\Ticket.dll
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ResolveAssemblyReference.cache
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.Form1.resources
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.Properties.Resources.resources
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.csproj.GenerateResource.Cache
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.exe
+D:\Mis documentos\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.pdb
+C:\Users\GuilleDell\Documents\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.exe
+C:\Users\GuilleDell\Documents\Visual Studio 2008\Projects\ImpTicket\ImpTicket\obj\Debug\ImpTicket.pdb

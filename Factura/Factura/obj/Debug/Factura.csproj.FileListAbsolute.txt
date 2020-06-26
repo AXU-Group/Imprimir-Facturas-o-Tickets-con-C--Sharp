@@ -1,0 +1,5 @@
+D:\Mis documentos\Visual Studio 2008\Projects\Factura\Factura\bin\Debug\Factura.dll
+D:\Mis documentos\Visual Studio 2008\Projects\Factura\Factura\bin\Debug\Factura.pdb
+D:\Mis documentos\Visual Studio 2008\Projects\Factura\Factura\obj\Debug\ResolveAssemblyReference.cache
+D:\Mis documentos\Visual Studio 2008\Projects\Factura\Factura\obj\Debug\Factura.dll
+D:\Mis documentos\Visual Studio 2008\Projects\Factura\Factura\obj\Debug\Factura.pdb

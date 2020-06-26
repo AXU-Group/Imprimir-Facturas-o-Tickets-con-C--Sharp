@@ -1,0 +1,37 @@
+private void button_Prueba_Click(object sender, EventArgs e)
+       {
+           Factura factura = new Factura();
+           string[] DateArray = DateTime.Now.ToShortDateString().Split('/');
+           //Datos de Factura
+           factura.AddDatos(DateArray[0], ConfigurationSettings.AppSettings["textBox_ImpDiaX"], ConfigurationSettings.AppSettings["textBox_ImpDiaY"]);
+           factura.AddDatos(DateArray[1], ConfigurationSettings.AppSettings["textBox_ImpMesX"], ConfigurationSettings.AppSettings["textBox_ImpMesY"]);
+           factura.AddDatos(DateArray[2], ConfigurationSettings.AppSettings["textBox_ImpAnoX"], ConfigurationSettings.AppSettings["textBox_ImpAnoY"]);
+           factura.AddDatos(DateTime.Now.ToShortTimeString(), ConfigurationSettings.AppSettings["textBox_ImpHorX"], ConfigurationSettings.AppSettings["textBox_ImpHorY"]);
+           factura.AddDatos("Manuel Belgrano", ConfigurationSettings.AppSettings["textBox_ImpSenX"], ConfigurationSettings.AppSettings["textBox_ImpSenY"]);
+           factura.AddDatos("Av. San Martin 2477 piso 7 dto A", ConfigurationSettings.AppSettings["textBox_ImpDomX"], ConfigurationSettings.AppSettings["textBox_ImpDomY"]);
+           factura.AddDatos("Capital Federal", ConfigurationSettings.AppSettings["textBox_ImpLocX"], ConfigurationSettings.AppSettings["textBox_ImpLocY"]);
+           factura.AddDatos("X", ConfigurationSettings.AppSettings["textBox_ImpRiX"], ConfigurationSettings.AppSettings["textBox_ImpRiY"]);
+           factura.AddDatos("X", ConfigurationSettings.AppSettings["textBox_ImpCfX"], ConfigurationSettings.AppSettings["textBox_ImpCfY"]);
+           factura.AddDatos("X", ConfigurationSettings.AppSettings["textBox_ImpNorX"], ConfigurationSettings.AppSettings["textBox_ImpNorY"]);
+           factura.AddDatos("X", ConfigurationSettings.AppSettings["textBox_ImpExeX"], ConfigurationSettings.AppSettings["textBox_ImpExeY"]);
+           factura.AddDatos("15-29058877-5", ConfigurationSettings.AppSettings["textBox_ImpCuiX"], ConfigurationSettings.AppSettings["textBox_ImpCuiY"]);
+           factura.AddDatos("00022451", ConfigurationSettings.AppSettings["textBox_ImpRemX"], ConfigurationSettings.AppSettings["textBox_ImpRemY"]);
+           factura.AddDatos("X", ConfigurationSettings.AppSettings["textBox_ImpConX"], ConfigurationSettings.AppSettings["textBox_ImpConY"]);
+           factura.AddDatos("X", ConfigurationSettings.AppSettings["textBox_ImpCcoX"], ConfigurationSettings.AppSettings["textBox_ImpCcoY"]);
+           //Items
+
+           factura.AddItems("01,Gorrita Adidas,15.500,(10.50),***,15.50");
+           factura.AddItems("22,DISCO rigido WesTern DIGITAL 500GB - continuacion del primer item en algun momento me lo deberia cortar y crear nuevas lineas que no importa la cantidad siempre las tiene que dividir siempre y cuadno yo ponga mucho texto en el casillero de detalle,600.6669,(10.50),***,600.00");
+           factura.AddItems("01,Medias Adidas,6.0000,(10.50),***,6.00");
+           factura.AddItems("05,Pantalones Acrilicos Nike MOD. 65544,12.0000,(10.50),***,12.00");
+           
+           //Totales
+           factura.AddDatos("0.0000", ConfigurationSettings.AppSettings["textBox_ImpSu1X"], ConfigurationSettings.AppSettings["textBox_ImpSu1Y"]);
+           factura.AddDatos("0.0000", ConfigurationSettings.AppSettings["textBox_ImpDesX"], ConfigurationSettings.AppSettings["textBox_ImpDesY"]);
+           factura.AddDatos("21%", ConfigurationSettings.AppSettings["textBox_ImpIpsX"], ConfigurationSettings.AppSettings["textBox_ImpIpsY"]);
+           factura.AddDatos("0.0000", ConfigurationSettings.AppSettings["textBox_ImpSu2X"], ConfigurationSettings.AppSettings["textBox_ImpSu2Y"]);
+           factura.AddDatos("21%", ConfigurationSettings.AppSettings["textBox_ImpIvaX"], ConfigurationSettings.AppSettings["textBox_ImpIvaY"]);
+           factura.AddDatos("0.0000", ConfigurationSettings.AppSettings["textBox_ImpTotX"], ConfigurationSettings.AppSettings["textBox_ImpTotY"]);
+           //Mando a Imprimir
+           factura.PrintFactura(ConfigurationSettings.AppSettings["textBox_ImpNOMBRE"]);
+       }
